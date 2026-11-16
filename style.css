@@ -1,0 +1,78 @@
+/* ========================================= */
+/* CORRECTIONS PROFESSIONNELLES POUR MOBILE  */
+/* ========================================= */
+
+/* 1. Supprime définitivement la bande blanche à droite */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* 2. Rend les images de projets nettes et non coupées */
+.projet-img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: contain;
+    background-color: #123b70; /* Fond bleu assorti à Tamzorya */
+}
+
+/* 3. Règles spéciales pour les écrans de téléphone (moins de 768px) */
+@media (max-width: 768px) {
+
+    /* Ajuste la barre de navigation pour que tout tienne sur une ligne */
+    .barre {
+        padding: 12px 10px;
+    }
+
+    .barre ul {
+        gap: 8px;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+    }
+
+    .barre a {
+        font-size: 13px;
+        padding: 6px 8px;
+        white-space: nowrap; /* Empêche "À propos" de se couper en deux */
+    }
+
+    /* Réduit la taille des grands titres sur mobile */
+    .hero-content h1,
+    .entete-page h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .hero-content p,
+    .entete-page p {
+        font-size: 1rem;
+    }
+
+    /* Ajuste les marges intérieures des sections et des cartes */
+    .section-sombre,
+    .section-claire {
+        padding: 50px 15px;
+    }
+
+    .projet-contenu,
+    .carte,
+    .formulaire-box {
+        padding: 20px;
+    }
+
+    /* Empile toutes les grilles en une seule colonne propre */
+    .grille-propos,
+    .mes-projets-grille,
+    .grille-contact,
+    .grille-trois,
+    .grille-deux {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
