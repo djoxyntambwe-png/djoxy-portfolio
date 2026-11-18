@@ -431,3 +431,43 @@ html, body {
     }
 }
 
+/* ========================================= */
+/* LIBÉRER LE DÉFILEMENT VERTICAL SUR MOBILE */
+/* ========================================= */
+
+html, body {
+    height: auto !important;
+    min-height: 100vh;
+    overflow-x: hidden !important;
+    overflow-y: auto !important; /* Autorise la page à monter et descendre librement */
+}
+
+/* Empêche les sections de bloquer le défilement */
+.section-sombre,
+.section-claire,
+main {
+    height: auto !important;
+    min-height: 100vh;
+    overflow: visible !important;
+    padding-top: 80px; /* Laisse de l'espace sous le menu pour ne pas couper le titre */
+    padding-bottom: 60px;
+}
+
+/* Garde la section Accueil centrée sur tout l'écran */
+.hero {
+    min-height: 90vh;
+    height: auto !important;
+}
+
+
+
+.btn-contact-direct {
+    display: inline-block;
+    background-color: #25D366;
+    color: #111111;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 18px;
+    border-radius: 8px;
+    margin-top: 8px;
+}
