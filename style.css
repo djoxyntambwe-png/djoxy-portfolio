@@ -473,3 +473,10 @@ main {
 }
 
 
+.projet-img2{
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: contain;
+    background-color: #123b70; /* Fond bleu assorti à Tamzorya */
+}
