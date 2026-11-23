@@ -471,3 +471,12 @@ main {
     border-radius: 8px;
     margin-top: 8px;
 }
+
+.projet-img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;       /* Remplit tout le cadre proprement sans bandes sur les côtés */
+    object-position: center; /* Centre le logo Tamzorya Gaming */
+    display: block;
+    border-bottom: 1px solid #383838;
+}
