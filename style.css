@@ -472,11 +472,18 @@ main {
     margin-top: 8px;
 }
 
+/* Recadre l'image de Tamzorya Gaming sur toute la largeur sans bandes */
 .projet-img {
-    width: 100%;
-    height: 190px;
-    object-fit: cover;       /* Remplit tout le cadre proprement sans bandes sur les côtés */
-    object-position: center; /* Centre le logo Tamzorya Gaming */
+    width: 100% !important;
+    height: 190px !important;
+    object-fit: cover !important;
+    object-position: top center !important;
     display: block;
-    border-bottom: 1px solid #383838;
+}
+
+/* Empêche les cartes de dépasser la largeur de l'écran sur mobile */
+.mes-projets-grille,
+.projet-box {
+    max-width: 100%;
+    box-sizing: border-box;
 }
